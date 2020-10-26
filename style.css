@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'bagian_satu bagian_satu bagian_satu bagian_satu'
+                         'bagian_dua bagian_dua bagian_dua bagian_dua'
+                         'bagian_tiga bagian_tiga bagian_tiga bagian_tiga';
+}
+
+.container .bagian_satu {
+    grid-area: bagian_satu;
+    min-height: 400px;
+    background-color: yellow;
+    position: relative;
+}
+
+.container .bagian_satu .computer {
+    width: 300px;
+    height: 350px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container .bagian_dua {
+    grid-area: bagian_dua;
+    min-height: 200px;
+    background-color: deepskyblue;
+    position: relative;
+}
+.container .bagian_dua .hasil {
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container .bagian_tiga {
+    grid-area: bagian_tiga;
+    min-height: 400px;
+    background-color: darkorange;
+}
+.container .bagian_tiga .player {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 2%;
+}
+.container .bagian_tiga .kotak {
+    width: 300px;
+    height: 350px;
+}
+.container .bagian_tiga .gunting {
+    background-image: url("d8kd3zz-8c277e76-09dd-4a49-b7c5-f1b42bb1ca5a.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.border {
+    border: 2px solid black;
+}
+.container .bagian_tiga .batu {
+    background-image: url("11-110703_vector-rock-png-circle.png");
+    background-position: center;
+    background-size: cover;
+}
+.container .bagian_tiga .kertas {
+    background-image: url("blank-paper-brochure-template-mockup-vector_53876-90336.jpg");
+    background-position: center;
+    background-size: cover;
+}
